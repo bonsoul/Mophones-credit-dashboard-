@@ -135,9 +135,9 @@
 </div>
 
 <div class="tabs">
-  <div class="tab active" onclick="showTab('q1')">📊 Q1 · Portfolio Health</div>
-  <div class="tab" onclick="showTab('q2')">🤝 Q2 · Credit × Experience</div>
-  <div class="tab" onclick="showTab('q3')">🔍 Q3 · Data Quality</div>
+  <div class="tab active" onclick="showTab('q1')"> Q1 · Portfolio Health</div>
+  <div class="tab" onclick="showTab('q2')"> Q2 · Credit × Experience</div>
+  <div class="tab" onclick="showTab('q3')"> Q3 · Data Quality</div>
 </div>
 
 <!-- ============================================================ Q1 ============================================================ -->
@@ -224,11 +224,11 @@
 
   <div class="insight-grid" style="margin-top:20px;">
     <div class="insight">
-      <h3><span class="icon">⚠️</span> Why the 6–12mo Band Matters Operationally</h3>
+      <h3><span class="icon"> </span> Why the 6–12mo Band Matters Operationally</h3>
       <p>PAR30 jumps from 13.6% (3–6mo) to <strong style="color:var(--warn)">26.5%</strong> (6–12mo) — a near-doubling in a single cohort step. This is the critical intervention window. By the time loans reach 1–2yr, write-off rates hit 29.6%, arrears average KES 34,516, and accounts are no longer classified as 'Active' — collections options narrow significantly. The 6–12mo band is where proactive restructuring or targeted outreach has the highest chance of reversing trajectory before the account hardens.</p>
     </div>
     <div class="insight">
-      <h3><span class="icon">📌</span> Operational Implication</h3>
+      <h3><span class="icon"> </span> Operational Implication</h3>
       <ul>
         <li>Set automated 90-day check-in triggers at loan age day 150 (mid 5th month) — before accounts cross into the high-risk band</li>
         <li>FPD rate is highest in 0–3mo (7%) and 1–2yr (6.5%) — different root causes requiring different interventions</li>
@@ -242,7 +242,7 @@
 <!-- ============================================================ Q2 ============================================================ -->
 <div id="q2" class="content section">
   <div class="section-title">Credit Outcomes × Customer Experience</div>
-  <div class="section-sub">NPS survey file not uploaded — analysis uses BALANCE_DUE_STATUS, RETURNED, RETURN_POLICY_COMPLIANCE, and ACCOUNT_STATUS as proxies for CX sentiment</div>
+  <div class="section-sub">NPS survey file had alot of nulls — analysis uses BALANCE_DUE_STATUS, RETURNED, RETURN_POLICY_COMPLIANCE, and ACCOUNT_STATUS as proxies for CX sentiment</div>
 
   <div class="kpi-row">
     <div class="kpi danger">
@@ -299,7 +299,7 @@
   </div>
 
   <div class="insight full" style="margin-bottom:20px;">
-    <h3><span class="icon">⚡</span> The Core Tension: Collections Effectiveness vs. Customer Experience</h3>
+    <h3><span class="icon"> </span> The Core Tension: Collections Effectiveness vs. Customer Experience</h3>
     <div class="tension-row">
       <div class="tension-box red">
         <h4>🔴 Collections Pressure Creates CX Damage</h4>
@@ -313,7 +313,7 @@
   </div>
 
   <div class="rec-box">
-    <h3>💡 Concrete Recommendation: Introduce a "Payment Grace Window" Protocol with Proactive Outreach</h3>
+    <h3> Concrete Recommendation: Introduce a "Payment Grace Window" Protocol with Proactive Outreach</h3>
     <p>
       Currently, device locking appears to trigger at or around 31–60 DPD (BLOCKED 31-60 status). For accounts that have a history of on-time payments and slip for the first time — implement a <strong>7-day grace window + automated outreach</strong> (SMS/push via MoApp) before blocking. 
       Pair this with a lightweight self-service restructuring option accessible via the app: allow a one-time payment plan revision without agent intervention. 
@@ -382,7 +382,7 @@
   </div>
 
   <!-- Issues -->
-  <div class="section-title" style="font-size:0.95rem; margin-bottom:14px;">🚩 Limitations Encountered</div>
+  <div class="section-title" style="font-size:0.95rem; margin-bottom:14px;"> Limitations Encountered</div>
 
   <div class="dq-item">
     <h4>1. CUSTOMER_AGE is mislabelled — it is loan age in days, not the borrower's age</h4>
@@ -395,7 +395,7 @@
   </div>
 
   <div class="dq-item">
-    <h4>3. NPS survey file not present despite being referenced in the brief</h4>
+    <h4>3. NPS survey file had alot of nulls</h4>
     <p>The brief (and original schema) references a full NPS dataset with 17 columns including satisfaction scores, qualitative feedback, and device/support experience. This file was not uploaded. Q2 was answered using credit and return data as proxies, but the richest signal for understanding collections-experience tension — verbatim customer feedback — was inaccessible. This is a data delivery gap that should be closed for any future CX-credit analysis.</p>
   </div>
 
@@ -405,7 +405,7 @@
   </div>
 
   <!-- Recommendations -->
-  <div class="section-title" style="font-size:0.95rem; margin-bottom:14px; margin-top:28px;">✅ Recommended Improvements</div>
+  <div class="section-title" style="font-size:0.95rem; margin-bottom:14px; margin-top:28px;"> Recommended Improvements</div>
 
   <div class="dq-fix">
     <h4>Fix 1 · Rename CUSTOMER_AGE → LOAN_AGE_DAYS and add BORROWER_AGE as a true demographic field</h4>
@@ -423,7 +423,7 @@
   </div>
 
   <div class="rec-box" style="margin-top: 8px;">
-    <h3>🎯 Summary Table</h3>
+    <h3> Summary Table</h3>
     <table class="tbl" style="margin-top:8px;">
       <thead><tr><th>Issue</th><th>Impact</th><th>Fix Priority</th></tr></thead>
       <tbody>
