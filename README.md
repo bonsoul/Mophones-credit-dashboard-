@@ -13,7 +13,9 @@ Explore how customer experience and credit performance intersect. This includes 
 3. Data Quality Issues
 Highlight gaps, inconsistencies, and missing values within the dataset. This section supports efforts to improve data reliability, ensuring that insights and decisions are based on accurate and complete information.
 
-    ![Dashboard](Data/Dashboard5.PNG)
+## The Visuals
+
+  ![Dashboard](Data/Dashboard5.PNG)
 
 ![Dashboard](Data/DASHBOARD1.PNG) ![Dashboard](Data/Dashboard2.PNG)
 
